@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && cd build && echo https://MYDOMAIN!!!!.surge.sh > CNAME && copy index.html 200.html && surge"
+    "deploy": "npm run build && cd build && echo https://landfors.surge.sh > CNAME && copy index.html 200.html && surge"
   },
   "eslintConfig": {
     "extends": [
