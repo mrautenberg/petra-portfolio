@@ -1,27 +1,27 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import Navbar from "./Navbar";
-import Home from "./Home";
-import Projects from "./Projects";
+import Navbar from "./components/Navbar"
+import HomePage from "./pages/HomePage"
+import ProjectPage from "./pages/ProjectPage"
 
-// @TODO: styled components
-import "./App.css";
+import "./App.css"
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <h1>yay, let's go!</h1>
-      </Switch>
-    </Router>
-  );
-};
+    <div className="container">
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/projects">
+            <ProjectPage />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  )
+}
 
-export default App;
+export default App
