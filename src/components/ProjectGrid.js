@@ -3,6 +3,7 @@ export default function ProjectGrid() {
     <div>
       <h1 style={{textAlign: "center"}}>Projekt namn 1</h1>
       <br />
+      {/* TODO: Grid layout for cards */}
       <div style={{
         display: "flex",
         alignItems: "center",

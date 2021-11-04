@@ -273,3 +273,60 @@ nav {
     margin-top: 0.3em;
   }
 }
+
+/* Accordion */
+
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--text-clr);
+  margin-bottom: 2rem;
+}
+
+
+.accordion-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.accordion-title {
+  background-color: var(--clr-background);
+  color: var(--text-clr);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none; 
+  transition: background-color 0.6s ease;
+  height: 10rem;
+}
+
+.accordion-title:hover,
+.active {
+  background-color: none;
+}
+
+.accordion-icon {
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 1s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: inherit;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.accordion-text {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}

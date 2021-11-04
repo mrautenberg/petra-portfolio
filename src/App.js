@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
-import HomePage from "./pages/HomePage"
+import EtcPage from "./pages/EtcPage"
+import AboutPage from "./pages/AboutPage"
 import ProjectPage from "./pages/ProjectPage"
 
 import "./App.css"
@@ -13,10 +14,13 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/projects">
             <ProjectPage />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/etc">
+            <EtcPage />
           </Route>
         </Switch>
       </Router>
