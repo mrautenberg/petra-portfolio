@@ -332,11 +332,44 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  border: 3px dashed purple;
 }
 
 .grid-description {
   border: 3px solid transparent;
 }
 
+/* Recomendation */
+.recomendation-img {
+  border: 5px dashed purple;
+  width: 400px;
+  height: 400px;
+  object-fit: fill;
+  border-radius: 100%;
+}
 
+i {
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  border: 2px solid var(--text-clr);
+  padding: 1rem 1rem;
+}
+
+.article-header > i {
+  margin-right: 0.5rem
+}
+
+
+/* @TODO: bättre positioneringn */
+i > svg {
+  position: absolute;
+  top: 25%;
+  left: 27%;
+  font-size: 1rem;
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
