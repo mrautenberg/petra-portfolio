@@ -229,9 +229,20 @@ nav {
 }
 
 .nav-header {
+  position: relative;
   font-size: var(--fs-900);
   margin-bottom: 0.6em;
   margin-top: 0.3em;
+}
+
+.nav-link::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 2px var(--text-clr);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 225px;
 }
 
 .nav-subheader {
@@ -246,9 +257,46 @@ nav {
   justify-content: center;
 }
 
-.nav-link > li + li {
-  margin-left: 2rem;
+.nav-link li:first-child,
+.nav-link li:nth-child(2),
+.nav-link li:last-child {
+  background-color: var(--clr-background);
+  width: auto;
+  display: inline-block;
+  z-index: 3;
+  padding: 0 2rem 0 2rem;
+  color: var(--text-clr);
+  position: relative;
+  margin: 0;
 }
+
+/* hover effect */
+/* https://codepen.io/maheshambure21/pen/QwXaRw?editors=1100 */
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: var(--text-clr);
+  height: 1.5px;
+}
+
+nav ul li a:hover:after {
+  width: 60%;
+}
+
+
 
 @media (min-width: 40em) {
   nav {
@@ -326,7 +374,7 @@ nav {
   padding: 18px;
 }
 
-/* Proect Grid */
+/* Project Grid */
 .project-grid {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -372,4 +420,19 @@ i > svg {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.divider {
+  border-bottom: 3px solid var(--text-clr);
+}
+
+
+.divider-nav-list {
+  position: absolute;
+  z-index: 2;
+}
+
+/* KOLLA HUR HOVER & ACTIVE SKA SE UT */
+.selected {
+  font-weight: bold;
 }

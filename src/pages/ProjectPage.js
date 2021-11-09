@@ -2,7 +2,7 @@ import ProcessAccordion from "../components/ProcessAccordion"
 import Recomendation from "../components/Recomendation"
 
 // Icons in grid
-import { FaBomb, FaClock, FaCommentMedical, FaCrosshairs, FaExclamation, FaToolbox, FaTools, FaUsers, FaRegCircle } from "react-icons/fa";
+import { FaBomb, FaClock, FaCommentMedical, FaCrosshairs, FaExclamation, FaToolbox, FaTools, FaUsers } from "react-icons/fa";
 
 // Icons in process acc
 import { FaCubes, FaHeart, FaRegComments, FaRegEdit, FaRegLightbulb } from "react-icons/fa"

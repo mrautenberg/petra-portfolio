@@ -14,19 +14,35 @@ const Navbar = () => {
         </p>
       </div>
       <nav>
-        <ul className="nav-link">
-          <li>
-            <NavLink to="/">Portfolio</NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/about">
-              Om mig
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/etc">Kul grejer</NavLink>
-          </li>
-        </ul>
+        <div>
+          <ul className="nav-link">
+            <li>
+              <NavLink
+                exact
+                to="/"
+                activeClassName="selected"
+              >
+                Portfolio</NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="selected">
+                Om mig
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/etc"
+                activeClassName="selected"
+              >
+                Kul grejer
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   )
