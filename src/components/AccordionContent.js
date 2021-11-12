@@ -1,7 +1,3 @@
 export default function AccordionContent() {
-  return (
-    <div>
-      I am ze content
-    </div>
-  )
+  return <div>I am ze content</div>
 }

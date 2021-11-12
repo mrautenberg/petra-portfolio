@@ -25,7 +25,7 @@ const Accordion = (props) => {
   const subtitleStyle = {
     fontWeight: 600,
     fontSize: "12px",
-    width: "60%"
+    width: "60%",
   }
 
   return (

@@ -13,31 +13,20 @@ const Navbar = () => {
         </p>
       </div>
       <nav>
-        <div style={{position: "relative"}}>
+        <div style={{ position: "relative" }}>
           <ul className="nav-link">
             <li>
-              <NavLink
-                exact
-                to="/"
-                activeClassName="selected"
-              >
-                Portfolio</NavLink>
+              <NavLink exact to="/" activeClassName="selected">
+                Portfolio
+              </NavLink>
             </li>
             <li>
-              <NavLink
-                exact
-                to="/about"
-                activeClassName="selected"
-              >
+              <NavLink exact to="/about" activeClassName="selected">
                 Om mig
               </NavLink>
             </li>
             <li>
-              <NavLink
-                exact
-                to="/etc"
-                activeClassName="selected"
-              >
+              <NavLink exact to="/etc" activeClassName="selected">
                 Kul grejer
               </NavLink>
             </li>
