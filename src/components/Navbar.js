@@ -1,9 +1,8 @@
-// Navlink used for activeClassName
 import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <>
+    <header className="main-header">
       <div className="nav-text">
         <h2 className="nav-header">Petra Rautenberg Landfors</h2>
         <p className="nav-subheader">
@@ -14,7 +13,7 @@ const Navbar = () => {
         </p>
       </div>
       <nav>
-        <div>
+        <div style={{position: "relative"}}>
           <ul className="nav-link">
             <li>
               <NavLink
@@ -28,7 +27,8 @@ const Navbar = () => {
               <NavLink
                 exact
                 to="/about"
-                activeClassName="selected">
+                activeClassName="selected"
+              >
                 Om mig
               </NavLink>
             </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </header>
   )
 }
 

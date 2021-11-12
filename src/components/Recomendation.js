@@ -2,17 +2,24 @@ import buddy from "./buddy.jpeg"
 
 export default function Recomendation() {
   return (
-    <div>
+    <section>
       <div className="divider"></div>
-      <h2>Recomendations</h2>
-      <div>
+      <h2 style={{ marginTop: "2rem" }}>
+        Recommendations
+      </h2>
+      <div className="recommendation-container">
         <img
-          className="recomendation-img"
+          className="recommendation-img"
           src={buddy}
-          alt="my friend" />
-        <p>Wow, hon är bäst!</p>
+          alt="my friend" 
+        />
+        <div className="recommendation-text-box">
+        <p className="recommendation-text">
+          Wow, hon är bäst!
+        </p>
+        </div>
       </div>
       <div className="divider"></div>
-    </div>
+    </section>
   )
 }

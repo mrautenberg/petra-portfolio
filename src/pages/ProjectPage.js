@@ -53,60 +53,61 @@ const descriptions = [
 export default function ProjectPage() {
   return (
     <>
-      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Projekt namn 1</h1>
-      <section className="project-grid">
-        {descriptions.map((desc) => (
-          <article className="grid-description">
-            <header className="article-header">
-              <>
-                <i>{desc.icon}</i>
-                <h3>{desc.header}</h3>
-              </>
-            </header>
-            <p>{desc.text}</p>
-            {console.log(desc.header)}
-          </article>
-        ))}
+      <section>
+        <h1>Projekt namn 1</h1>
+        <div className="project-grid">
+          {descriptions.map((desc) => (
+            <article className="grid-description">
+              <header className="project-header">
+                <>
+                  <i>{desc.icon}</i>
+                  <h3>{desc.header}</h3>
+                </>
+              </header>
+              <p>{desc.text}</p>
+              {console.log(desc.header)}
+            </article>
+          ))}
+        </div>
       </section>
-      <h2 style={{textAlign: "center", marginBottom: "2rem"}}>Process</h2>
-      {/* map out ProcessAccordion */}
-      <div className="process-container">
-        <ProcessAccordion
-          icon={<i><FaHeart /></i>}
-          title="Empatisera" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
-        >
-          <span className="accordion-text">abc</span>
-        </ProcessAccordion>
-        <ProcessAccordion
-          icon={<i><FaRegEdit /></i>}
-          title="Definiera" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
-        >
-          <span className="accordion-text">abc</span>
-        </ProcessAccordion>
-        <ProcessAccordion
-          icon={<i><FaRegLightbulb /></i>}
-          title="Idé"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
-        >
-          <span className="accordion-text">abc</span>
-        </ProcessAccordion>
-        <ProcessAccordion
-          icon={<i><FaCubes /></i>}
-          title="Prototyp"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
-        >
-          <span className="accordion-text">abc</span>
-        </ProcessAccordion>
-        <ProcessAccordion
-          icon={<i><FaRegComments /></i>}
-          title="Testa"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
-        >
-          <span className="accordion-text">abc</span>
-        </ProcessAccordion>
-      </div>
-
-      <br />
+      <section>
+        <h2>Process</h2>
+        <div className="process-container">
+          <ProcessAccordion
+            icon={<i><FaHeart /></i>}
+            title="Empatisera" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
+          >
+            <span className="accordion-text">abc</span>
+          </ProcessAccordion>
+          <ProcessAccordion
+            icon={<i><FaRegEdit /></i>}
+            title="Definiera" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
+          >
+            <span className="accordion-text">abc</span>
+          </ProcessAccordion>
+          <ProcessAccordion
+            icon={<i><FaRegLightbulb /></i>}
+            title="Idé"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
+          >
+            <span className="accordion-text">abc</span>
+          </ProcessAccordion>
+          <ProcessAccordion
+            icon={<i><FaCubes /></i>}
+            title="Prototyp"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
+          >
+            <span className="accordion-text">abc</span>
+          </ProcessAccordion>
+          <ProcessAccordion
+            icon={<i><FaRegComments /></i>}
+            title="Testa"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, eros id consequat dignissim, dolor dui convallis tortor, et fringilla tortor diam nec quam. Nulla id risus nisi. Fusce non leo at magna feugiat eleifend. Aenean dapibus lorem nisl. Maecenas. "
+          >
+            <span className="accordion-text">abc</span>
+          </ProcessAccordion>
+        </div>
+      </section>
       <Recomendation />
     </>
   )
